@@ -35,7 +35,7 @@ def sdiv(n):
 ans = 0
 for x in range(1, 10000):
     p0 = sdiv(x)
-    if x != p0 and x == sdiv(sdiv(x)):
+    if x != p0 and x == sdiv(p0):
         ans += x
 
 print('Sum of amicable numbers below 10000: {0}'.format(ans))
