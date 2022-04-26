@@ -9,4 +9,4 @@ mxn = (1001 - 1) // 2 + 1
 for x in range(1, mxn):
     ans += (4*(2*x + 1)*(2*x + 1) - 12*x)
 
-print(ans)
+print('sum of diagonals in a 1001x1001 spiral: {0}'.format(ans))
