@@ -1,3 +1,10 @@
+'''
+The idea is to generate all permutations of [1,2,3,4,5,6,7,8,9], and
+partition the result into three parts. Then check whether the first part multiplied
+by the second part equals the third part. Then, save it in a dictionary and add up
+the value of the keys at the end.
+'''
+
 def next_permutation(perm):
     for i in reversed(range(len(perm) - 1)):
         if perm[i] < perm[i + 1]:
@@ -32,4 +39,4 @@ ans = 0
 for prod in memo:
     ans += prod
 
-print(ans)
+print('sum of 9 digit pandigital products: {0}'.format(ans))
