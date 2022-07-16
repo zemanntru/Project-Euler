@@ -1,3 +1,10 @@
+'''
+This is a multistage process: first determine the overall rank of each player's hands. If the ranks
+clearly differ, we have a clear winner. If the rank is tied, then the specifics are compared such as
+the value of the pairs and the largest cards e.t.c
+'''
+
+
 hands = open('p54-poker-hands.in').read().replace('\n', ' ').split(' ')
 sym = { '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, 'T': 10, 'J': 11, 'Q': 12, 'K': 13, 'A': 14}
 cons = '234567891011121314'
