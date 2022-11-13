@@ -22,7 +22,6 @@ from statistics import mode
 
 infile = 'p59-cipher.in'
 msg = list(map(int, open(infile).read().split(',')))
-f = open('test123.out', 'w')
 key = [ord(' ') ^ mode([msg[x] for x in range(0, len(msg), 3)]), 
         ord(' ') ^ mode([msg[x] for x in range(1, len(msg), 3)]),
             ord(' ') ^ mode([msg[x] for x in range(2, len(msg), 3)])]
