@@ -28,4 +28,4 @@ for n in range (2, 1000001):
     if cur > mx:
         mx, ans = cur, n
 
-print('The largest ratio of n to phi(n): {0}', ans)
+print('The largest ratio of n to phi(n): {0}'.format(ans))
