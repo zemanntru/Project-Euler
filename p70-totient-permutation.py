@@ -29,9 +29,12 @@ def factor(x):
     memo[xf] = 1
     for p in lpr:
         if x % p == 0:
+            cnte = 0
             while x % p == 0:
+                cnte += 1
                 x /= p
-            memo[xf] *= memo[p]
+
+            memo[xf] *= memo[p] * math.pow(p, cnte - 1)
             if memo[int(x)] != False:
                 memo[xf] *= memo[int(x)]
                 break
