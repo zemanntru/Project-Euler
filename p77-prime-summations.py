@@ -18,7 +18,7 @@ def sumfac(x):
         print(x, len(sfac))
         assert False
 
-    n, p, ret = x, 2, 0
+    n, p = x, 2
     while n > 1:
         if n % p == 0:
             sfac[x] += p
