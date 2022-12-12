@@ -1,6 +1,6 @@
 '''
 The number of rectangles in a nxm grid is sum(1 <= j <= n)sum(1 <= k <= m)(n - j + 1)(m - k + 1)
-which gives the close for S = mn(m + 1)(n + 1) / 4. Hence, the answer is min(abs(S(m,n) - 2000000)). 
+which gives the close form S = mn(m + 1)(n + 1) / 4. Hence, the answer is min(abs(S(m,n) - 2000000)). 
 Therefore it is sufficient to check through the values of m such that m*(m + 1) <= sqrt(8000000)
 '''
 
