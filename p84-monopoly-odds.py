@@ -15,7 +15,6 @@ sq = ['GO', 'A1', 'CC', 'A2', 'T1', 'R1', 'B1', 'CH', \
        'G2', 'CC', 'G3', 'R4', 'CH3', 'H1', 'T2', 'H2']
 
 adj = [[0.0] * 120 for x in range(120)]
-mat = [[0.0] * 40 for x in range(40)]
 vprob = [1.0] + [0.0] * 119
 
 cG0, cR1, c2J, cC1, cU1, cE3, cU2, cH2 = 0, 5, 10, 11, 12, 24, 28, 39
