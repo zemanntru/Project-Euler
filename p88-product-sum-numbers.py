@@ -23,7 +23,7 @@ def fac(n):
     if mems0[n] != None:
         return mems0[n]
 
-    p, N, ls_fac, psk = 2, n, [], []
+    p, N, ls_fac = 2, n, []
     while n > 1:
         while n % p == 0:
             ls_fac.append(p)
