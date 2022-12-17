@@ -23,8 +23,8 @@ for x1 in range(0, mxn):
                         ans += 1
                     if (x2 - x1) * x2 + (y2 - y1) * y2 == 0:
                         ans += 1
-                    elif x1 * x2 + y1 * y2 == 0:
+                    if x1 * x2 + y1 * y2 == 0:
                         ans += 1
-                        
+
 print('The number of right triangles in the grid formed by \
 0 <= x1, y1, x2, y2 <= 50: {0}'.format(ans // 2))
