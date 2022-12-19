@@ -18,5 +18,3 @@ for i in range(len(expls)):
 
 print('The line containing the greatest exponential value: {0}'.format(ans + 1))
 
-
-
