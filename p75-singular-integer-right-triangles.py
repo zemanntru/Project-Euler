@@ -2,7 +2,7 @@
 We use the pythagorean triple generator F(m,n) where the fundamental triples are in
 the form a = m^2 - n^2, b = 2mn, and c = m^2 + n^2 where m > n > 0, m,n are integers.
 This implies that F(k*(m,n)) = (k*a, k*b, k*c) are also triples. By the triangle inequality, 
-c < a + b, so 2c < a + b + c <= 1500000, hence, c = m^2 + n^2 < m^2 < 750000,
+c < a + b, so 2c < a + b + c <= 1500000, hence, c = m^2 + n^2 < 2m^2 < 750000,
 giving an upper bound of m <= 866. Then for each 0 < n < m, all coprime pairs (m,n) 
 will produce a right triangle of length L = 2m(m + n) < 1500000, which is then recorded. 
 Furthermore, for all k such that k*L < 1500000 are also recorded. There exists values such that
